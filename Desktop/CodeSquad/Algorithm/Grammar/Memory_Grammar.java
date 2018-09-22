@@ -1,4 +1,4 @@
-package Grammar;
+package grammar;
 
 public class Memory_Grammar {
 	public static void main(String[] args) {

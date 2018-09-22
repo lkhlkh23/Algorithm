@@ -1,4 +1,4 @@
-package Grammar;
+package grammar;
 
 public class Deque_Grammar {
 

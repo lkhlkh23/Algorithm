@@ -1,4 +1,4 @@
-package Kakao;
+package kakao;
 
 import java.io.*;
 public class Main_6 {

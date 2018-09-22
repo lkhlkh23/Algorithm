@@ -1,4 +1,4 @@
-package Grammar;
+package grammar;
 
 import java.util.*;
 

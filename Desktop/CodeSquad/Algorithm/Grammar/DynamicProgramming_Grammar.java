@@ -1,4 +1,4 @@
-package Grammar;
+package grammar;
 
 public class DynamicProgramming_Grammar {
 

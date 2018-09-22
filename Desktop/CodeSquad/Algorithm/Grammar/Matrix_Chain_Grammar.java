@@ -1,4 +1,4 @@
-package Grammar;
+package grammar;
 
 public class Matrix_Chain_Grammar {
 
