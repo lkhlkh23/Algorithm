@@ -23,13 +23,6 @@ public class Solution {
         return answer;
     }
 
-    public static int recursive(List<Integer> list, int n, int complete) {
-        int[] arr = new int[3];
-        for(int i = 1; i <= n; i++) {
-            arr.
-        }
-    }
-
     public static void main(String[] args) {
         int[] d = {1,3,2,5,4};
         System.out.println(solution(d, 9)); // 1 3 5
