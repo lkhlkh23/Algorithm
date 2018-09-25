@@ -1,4 +1,4 @@
-package Q0029;
+package Q0029_Not;
 
 public class Solution {
     /* 콜라츠의 추측
