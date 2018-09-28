@@ -25,7 +25,8 @@ public class Solution {
 		}
 		
 		for(String person : completion) {
-			if(map.get(person) > 1) map.put(person, map.get(person) - 1);
+			if(map.get(person) == null) return person;
+			else if(map.get(person) > 1) map.put(person, map.get(person) - 1);
 			else map.remove(person);
 		}
 		

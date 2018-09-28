@@ -1,4 +1,4 @@
-package Q0023_Not;
+package Q0023_Not_Budget;
 
 import java.util.*;
 

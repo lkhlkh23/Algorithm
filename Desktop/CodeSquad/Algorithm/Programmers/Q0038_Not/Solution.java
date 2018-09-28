@@ -21,11 +21,13 @@ class Solution {
             allList.add(i + 1 + "");
 
         /* 당연히 체육복을 2벌 가져온 학생의 체육복이 도난을 당했다면, 여벌의 체육복을 빌려줄 수 없습니다. */
-        for(int i = 0; i < lostList.size(); i++) {
-            String num = lostList.get(i);
+        Iterator<String> it = lostList.iterator();
+        while(it.hasNext()) {
+            String num = it.next();
+            System.out.println(num);
             if(reserveList.contains(num)) {
                 reserveList.remove(num);
-                lostList.remove(num);
+                it.remove();
             }
         }
 
@@ -47,5 +49,11 @@ class Solution {
             }
         }
         return answer;
+    }
+
+    public static void main(String args[]) {
+        int[] lost = {1,2};
+        int[] reserve = {1,2};
+        System.out.println(solution(30, lost, reserve));
     }
 }
