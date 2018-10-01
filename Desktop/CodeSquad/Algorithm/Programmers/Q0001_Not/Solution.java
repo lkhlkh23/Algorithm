@@ -1,6 +1,4 @@
-package Q0001;
-
-import java.util.*;
+package Q0001_Not;
 
 public class Solution {
 	/* [소수 찾기!] 

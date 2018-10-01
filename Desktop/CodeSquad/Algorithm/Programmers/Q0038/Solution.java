@@ -1,4 +1,4 @@
-package Q0038_Not;
+package Q0038;
 
 import java.util.*;
 class Solution {
