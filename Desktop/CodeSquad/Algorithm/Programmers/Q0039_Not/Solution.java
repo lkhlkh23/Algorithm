@@ -1,4 +1,4 @@
-package Q0039;
+package Q0039_Not;
 
 public class Solution {
     /* 무지의 먹방라이브
