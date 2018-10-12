@@ -3,6 +3,8 @@ package Q0041;
 import java.util.Arrays;
 
 public class Solution {
+    /* H-index
+        url : https://programmers.co.kr/learn/courses/30/lessons/42747?language=java */
     public static int solution(int[] citations) {
         int answer = 0;
         Arrays.sort(citations);
