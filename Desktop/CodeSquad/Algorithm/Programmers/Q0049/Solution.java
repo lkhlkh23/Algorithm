@@ -1,5 +1,7 @@
 package Q0049;
 
+import java.util.*;
+
 public class Solution {
     /* 전화번호 목록
      *    url : https://programmers.co.kr/learn/courses/30/lessons/42577?language=java */
@@ -11,6 +13,18 @@ public class Solution {
                 }
             }
         }
+        return true;
+    }
+
+    public static boolean solution3(String[] phone_book) {
+        List<String> list = Arrays.asList(phone_book);
+        Collections.sort(list);
+        for(int i = 0; i < list.size() - 1; i++) {
+            if(list.get(i + 1).startsWith(list.get(i))) {
+                return false;
+            }
+        }
+
         return true;
     }
 
@@ -27,10 +41,10 @@ public class Solution {
 
     public static void main(String[] args) {
         String[] phone_book = {"119", "97674223", "1195524119"};
-        System.out.println(solution2(phone_book));
+        System.out.println(solution3(phone_book));
 
         String[] phone_book2 = {"123", "456", "789"};
-        System.out.println(solution2(phone_book2));
+        System.out.println(solution3(phone_book2));
 
         System.out.println("123".substring(0, 2));
 
