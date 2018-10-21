@@ -2,7 +2,9 @@ package Q0040_Not;
 
 import java.util.Arrays;
 class Solution {
-    public static String solution(int[] numbers) {
+    /* 가장큰수
+     *     url : https://programmers.co.kr/learn/courses/30/lessons/42746?language=java */
+    public static String solution2(int[] numbers) {
         char[] arr = {'K', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'};
         String[] result = new String[numbers.length];
         for(int i = 0; i < numbers.length; i++) {
@@ -26,6 +28,13 @@ class Solution {
         }
 
         return sb.toString();
+    }
+
+    public static String solution(int[] numbers) {
+        String answer = "";
+
+
+        return answer;
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Q0052_Not;
+package Q0052_Combination;
 
 public class Permutation {
     public static void swap(int[] arr, int start, int end) {

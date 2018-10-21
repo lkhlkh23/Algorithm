@@ -1,4 +1,4 @@
-package Q0052_Not;
+package Q0052_Combination;
 
 import java.util.*;
 
@@ -6,10 +6,6 @@ public class Solution {
     public static int solution(int[] nums) {
         /* 소수만들기
             url : https://programmers.co.kr/learn/courses/30/lessons/12977 */
-        int answer = 0;
-        List<Integer> list = new ArrayList<>();
-        permutation(list, nums, 0, 3);
-
         boolean[] primes = new boolean[1000 * 50 + 1];
         int i = 2;
         primes[0] = primes[1] = true;
@@ -23,9 +19,12 @@ public class Solution {
             i++;
         }
 
-        for(int num : list) {
+        List<Integer> result = new ArrayList<>();
+        combination(0, nums, 0, 0, result);
+
+        int answer = 0;
+        for(int num : result) {
             answer = primes[num] ? answer : answer + 1;
-            //System.out.println(num);
         }
 
         return answer;
@@ -55,8 +54,19 @@ public class Solution {
         arr[j] = temp;
     }
 
+    public static void combination(int index, int[] origin, int converted, int depth, List<Integer> result) {
+        if(depth == 3) {
+            result.add(converted);
+        } else {
+            for(int i = index; i <= origin.length - 3 + depth; i++) {
+                combination(i + 1, origin, converted + origin[i], depth + 1, result);
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4};
+        int[] arr = {1,2,7,6,4};
         System.out.println(solution(arr));
+
     }
 }
