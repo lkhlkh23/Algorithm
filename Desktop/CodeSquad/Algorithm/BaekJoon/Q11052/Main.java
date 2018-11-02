@@ -1,36 +1,33 @@
 package Q11052;
 
 import java.io.*;
-import java.util.StringTokenizer;
 
 public class Main {
-    /* 카드구매하기
-    *     url : https://www.acmicpc.net/problem/11052 */
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws NumberFormatException, IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
         int n = Integer.parseInt(br.readLine());
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int[] p = new int[st.countTokens()];
-        int index = 0;
-        while(st.hasMoreTokens()) {
-            p[index++] = Integer.parseInt(st.nextToken());
+
+        int[] arr = new int[n + 1];
+        int index = 1;
+        for(String str : br.readLine().split(" ")) {
+            arr[index++] = Integer.parseInt(str);
         }
 
-        int[] result = new int[n];
-        result[0] = p[0];
-        result[1] = Math.max(p[1], p[0] * 2);
+        int[] result = new int[arr.length];
+        result[1] = arr[1];
         for(int i = 2; i < result.length; i++) {
-            result[i] = Math.max(p[i], result[i - 2] + result[i - 1]);
+            int max = 0;
+            for(int j = 1; j < i; j++) {
+                max = Math.max(max, result[j] + result[i - j]);
+            }
+            result[i] = Math.max(max, arr[i]);
         }
 
-        for(int num : result) {
-            System.out.println(num + "\t" + "!");
-        }
-
-        bw.write(result[n - 1] + "\n");
+        bw.write(result[n] + "\n");
         bw.close();
+
     }
+
 }
