@@ -20,53 +20,26 @@ public class Main {
 		 3. 출력
 			첫째 줄에 연산을 하는 횟수의 최솟값을 출력한다. 
 		 */
+
+		/* D(n) = Min(D(n-1), D(n/2), D(n/3)) */
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int n = Integer.parseInt(br.readLine());
-		
-		int[] arr = initArr(n);
-		for(int i = 1; i < 100; i++) {
-			System.out.println(i + " : " + arr[i]);
+		int[] arr = new int[n + 1];
+		arr[0] = arr[1] = 0;
+		for(int i = 2; i < arr.length; i++) {
+			if(i % 3 == 0) {
+				arr[i] = Math.min(arr[i - 1], arr[i / 3]) + 1;
+			} else if(i % 2 == 0) {
+				arr[i] = Math.min(arr[i - 1], arr[i / 2]) + 1;
+			} else {
+				arr[i] = arr[i - 1] + 1;
+			}
 		}
+		bw.write(arr[n] + "\n");
 		bw.close();
 		
-	}
-	
-	public static int getResult(int n) {
-		int answer = 0;
-		int[] arr = new int[1000000 + 1];
-		arr[2] = arr[3] = 1;
-		for(int i = 4; i <= n; i++) {
-			int num = i;
-			answer = 0;
-			while(num > 1) {
-				if(num % 3 == 0) {
-					num /= 3;
-				} else if(num % 2 == 0) {
-					num /= 2;
-				} else {
-					break;
-				}
-				answer++;
-			}
-			arr[i] = num == 1 ? answer : Math.min(arr[i - 1] + 1, arr[i - 2] + 2) + answer;
-		}
-
-		return arr[n];
-	}
-	
-	public static int[] initArr(int n) {
-		int[] arr = new int[n + 1];
-		
-		int result = 0;
-		for(int i = 0; (int)Math.pow(2, i) <= n; i++) {
-			for(int j = 0; (result = ((int)Math.pow(2, i)) * ((int)Math.pow(3, j))) <= n; j++) {
-				arr[result] = i + j;
-			}
-		}
-		
-		return arr;
 	}
 
 }
