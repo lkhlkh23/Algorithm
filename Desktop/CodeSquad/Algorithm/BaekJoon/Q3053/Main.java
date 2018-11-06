@@ -3,6 +3,11 @@ package Q3053;
 import java.io.*;
 import java.util.*;
 public class Main {
+   /*
+	 	문제 : 택시 기하학
+	 	url : https://www.acmicpc.net/problem/3053
+	 	재풀이 : O
+	*/
    static final int ROUND_STANDARD = 6; 
    public static void main(String[] args) throws NumberFormatException, IOException {
       Scanner sc = new Scanner(System.in);

@@ -3,6 +3,11 @@ package Q2577;
 import java.io.*;
 
 public class Main {
+	/*
+	 	문제 : 숫자의 갯수
+	 	url : https://www.acmicpc.net/problem/2577
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) throws IOException {
 		/* 2018.08.12 */

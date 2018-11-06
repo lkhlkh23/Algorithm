@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 소수 구하기
+	 	url : https://www.acmicpc.net/problem/1929
+	 	재풀이 : O
+	*/
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

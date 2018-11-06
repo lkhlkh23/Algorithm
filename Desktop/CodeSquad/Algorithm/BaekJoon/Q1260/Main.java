@@ -3,6 +3,11 @@ package Q1260;
 import java.util.*;
 import java.io.*;
 public class Main {
+	/*
+	 	문제 : DFS 와 BFS
+	 	url : https://www.acmicpc.net/problem/1260
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) throws IOException {
 		/* 2018.08.15 */

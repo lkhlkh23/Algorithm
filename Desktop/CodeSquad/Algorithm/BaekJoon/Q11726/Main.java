@@ -3,6 +3,11 @@ package Q11726;
 import java.util.Scanner;
 
 public class Main {
+    /*
+	 	문제 : 2 * n 타일링
+	 	url : https://www.acmicpc.net/problem/11726
+	 	재풀이 : O
+	*/
     public static void main(String[] args) {
         /* 2 * n 타일링 */
         int n = new Scanner(System.in).nextInt();

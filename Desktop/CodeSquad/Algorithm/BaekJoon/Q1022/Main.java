@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 소용돌이 예쁘게 출력하기
+	 	url : https://www.acmicpc.net/problem/1022
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -3,6 +3,11 @@ package Q1924;
 import java.util.Scanner;
 
 public class Main {
+	/*
+	 	문제 : 2007년
+	 	url : https://www.acmicpc.net/problem/1924
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) {
 		/* 2018.08.07 */

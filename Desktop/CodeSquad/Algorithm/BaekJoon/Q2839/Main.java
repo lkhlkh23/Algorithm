@@ -3,6 +3,11 @@ package Q2839;
 import java.util.Scanner;
 
 public class Main {
+    /*
+	 	문제 : 설탕배달
+	 	url : https://www.acmicpc.net/problem/2839
+	 	재풀이 : O
+	*/
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int total = sc.nextInt();

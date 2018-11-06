@@ -3,6 +3,11 @@ package Q6591;
 import java.io.*;
 
 public class Main {
+	/*
+	 	문제 : 이항쇼다운
+	 	url : https://www.acmicpc.net/problem/6591
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		/* 2018.08.24 */

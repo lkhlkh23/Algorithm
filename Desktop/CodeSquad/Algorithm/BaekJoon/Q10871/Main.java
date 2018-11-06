@@ -3,6 +3,11 @@ package Q10871;
 import java.io.*;
 
 public class Main {
+   /*
+	 	문제 : X보다 작은수
+	 	url : https://www.acmicpc.net/problem/10871
+	 	재풀이 : X
+	*/
    static final String SPLIT_STANDARD = " ";
    
    public static void main(String[] args) throws IOException {

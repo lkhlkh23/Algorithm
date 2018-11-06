@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 수 정렬하기
+	 	url : https://www.acmicpc.net/problem/2750
+	 	재풀이 : X
+	*/
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringBuilder sb = new StringBuilder();

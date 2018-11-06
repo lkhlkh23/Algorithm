@@ -3,6 +3,11 @@ package Q3036;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 링
+	 	url : https://www.acmicpc.net/problem/3036
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) {
 		/*

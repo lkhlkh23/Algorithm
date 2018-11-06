@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 통계학
+	 	url : https://www.acmicpc.net/problem/2108
+	 	재풀이 : O
+	*/
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	public static void main(String[] args) throws NumberFormatException, IOException {

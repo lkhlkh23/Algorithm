@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 회전하는 큐
+	 	url : https://www.acmicpc.net/problem/1021
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

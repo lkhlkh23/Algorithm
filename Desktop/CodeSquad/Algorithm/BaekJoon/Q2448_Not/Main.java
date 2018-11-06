@@ -1,8 +1,13 @@
-package Q2448;
+package Q2448_Not;
 
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 별찍기 - 11
+	 	url : https://www.acmicpc.net/problem/1000
+	 	재풀이 : O
+	*/
 	static boolean[][] arr;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

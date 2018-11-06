@@ -3,6 +3,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 단어정렬
+	 	url : https://www.acmicpc.net/problem/1181
+	 	재풀이 : O
+	*/
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/*
 		 1. 문제

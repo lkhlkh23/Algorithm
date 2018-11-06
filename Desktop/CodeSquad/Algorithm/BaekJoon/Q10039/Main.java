@@ -7,6 +7,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class Main {
+	/*
+	 	문제 : 평균점수
+	 	url : https://www.acmicpc.net/problem/10039
+	 	재풀이 : X
+	*/
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/* 2018.08.12 */
 		/*

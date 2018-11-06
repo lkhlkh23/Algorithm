@@ -3,6 +3,11 @@ package Q5622;
 import java.util.Scanner;
 
 public class Main {
+	/*
+	 	문제 : 다이얼
+	 	url : https://www.acmicpc.net/problem/5622
+	 	재풀이 : X
+	*/
 	public static void main(String[] args) {
 		/* 2018.08.08 */
 		/*

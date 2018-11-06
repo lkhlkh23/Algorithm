@@ -2,7 +2,11 @@ package Q1003;
 
 import java.io.*;
 public class Main {
-
+	/*
+	 	문제 : 피보나치수 함수
+	 	url : https://www.acmicpc.net/problem/1003
+	 	재풀이 : X
+	*/
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/* 2018.08.12 */
 		/*

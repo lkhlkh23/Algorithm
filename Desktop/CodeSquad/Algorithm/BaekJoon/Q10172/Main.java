@@ -1,6 +1,11 @@
 package Q10172;
 
 public class Main {
+	/*
+	 	문제 : 개
+	 	url : https://www.acmicpc.net/problem/10172
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) {
 		/* 2018.09.18 */

@@ -3,8 +3,11 @@ package Q11057;
 import java.util.Scanner;
 
 public class Main {
-    /* 오르막수
-     *    url : https://www.acmicpc.net/problem/11057 */
+    /*
+	 	문제 : 오르막수
+	 	url : https://www.acmicpc.net/problem/11057
+	 	재풀이 : O
+	*/
     public static void main(String[] args) {
         int n = new Scanner(System.in).nextInt();
 

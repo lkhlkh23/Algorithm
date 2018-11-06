@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 public class Main {
+	/*
+	 	문제 : 최소공배수
+	 	url : https://www.acmicpc.net/problem/1934
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/*

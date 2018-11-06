@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+    /*
+	 	문제 : 연속합
+	 	url : https://www.acmicpc.net/problem/1912
+	 	재풀이 : O
+	*/
 
     public static void main(String[] args) throws IOException {
         /* 모든 경우의 수 : 시간초과 */

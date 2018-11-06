@@ -3,6 +3,11 @@ package Q1193;
 import java.util.Scanner;
 
 public class Main {
+	/*
+	 	문제 : 분수찾기
+	 	url : https://www.acmicpc.net/problem/1193
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) {
 		/* 2018.08.03 */

@@ -3,6 +3,11 @@ package Q11654;
 import java.util.Scanner;
 
 public class main {
+	/*
+	 	문제 : 아스키코드
+	 	url : https://www.acmicpc.net/problem/11654
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) {
 		/* 2018.08.03 */

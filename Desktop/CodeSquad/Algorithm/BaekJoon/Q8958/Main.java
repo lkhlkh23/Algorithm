@@ -3,6 +3,11 @@ package Q8958;
 import java.io.*;
 
 public class Main {
+	/*
+	 	문제 : OX퀴즈
+	 	url : https://www.acmicpc.net/problem/8958
+	 	재풀이 : X
+	*/
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/* 2018.08.12 */
 		/*

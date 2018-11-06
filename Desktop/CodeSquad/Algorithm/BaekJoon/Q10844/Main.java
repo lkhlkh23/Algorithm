@@ -3,6 +3,11 @@ package Q10844;
 import java.util.Scanner;
 
 public class Main {
+    /*
+	 	문제 : 쉬운계단수
+	 	url : https://www.acmicpc.net/problem/10844
+	 	재풀이 : O
+	*/
     public static void main(String[] args) {
         int n = new Scanner(System.in).nextInt();
         int[][] arr = new int[n + 1][10];

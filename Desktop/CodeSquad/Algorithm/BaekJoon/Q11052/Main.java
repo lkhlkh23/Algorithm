@@ -3,6 +3,11 @@ package Q11052;
 import java.io.*;
 
 public class Main {
+    /*
+	 	문제 : 카드구매하기
+	 	url : https://www.acmicpc.net/problem/11052
+	 	재풀이 : O
+	*/
 
     public static void main(String[] args) throws NumberFormatException, IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

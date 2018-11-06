@@ -2,6 +2,11 @@ package Q1149;
 
 import java.util.*;
 public class Main{
+	/*
+	 	문제 : RGB 거리
+	 	url : https://www.acmicpc.net/problem/1149
+	 	재풀이 : O
+	*/
     public static void main(String[] args) {
     	Scanner sc = new Scanner(System.in);
     	int homeNum = sc.nextInt();

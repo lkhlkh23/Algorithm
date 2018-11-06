@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 조세퍼스 문제
+	 	url : https://www.acmicpc.net/problem/1158
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) throws IOException {
 		/* 2018.08.16 */

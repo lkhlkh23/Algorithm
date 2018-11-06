@@ -1,9 +1,13 @@
-package Q2749;
+package Q2749_Not;
 
 import java.io.*;
-import java.math.*;
 
 public class Main {
+	/*
+	 	문제 : 피보나치수 3
+	 	url : https://www.acmicpc.net/problem/2749
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) throws IOException {
 		/* 2018.08.12 */

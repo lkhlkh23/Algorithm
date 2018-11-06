@@ -1,10 +1,15 @@
-package Q11401;
+package Q11401_Not;
 
 import java.io.*;
 import java.math.BigInteger;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 이항계수 3
+	 	url : https://www.acmicpc.net/problem/11401
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) throws IOException {
 		/* 2018.08.21 */

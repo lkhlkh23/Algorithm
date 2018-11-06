@@ -7,7 +7,11 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-
+	/*
+	 	문제 : Fly me to the Alpha Centauri
+	 	url : https://www.acmicpc.net/problem/1011
+	 	재풀이 : O
+	*/
 	public static void main(String[] args) {
 		/* 2018.08.03 */
 		/*

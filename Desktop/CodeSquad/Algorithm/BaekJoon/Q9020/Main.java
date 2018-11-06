@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 골드바흐의 추측
+	 	url : https://www.acmicpc.net/problem/9020
+	 	재풀이 : X
+	*/
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/* 2018.08.11 */
 		/*

@@ -3,6 +3,11 @@ package Q1932;
 import java.io.*;
 
 public class Main {
+	/*
+	 	문제 : 정수삼각형
+	 	url : https://www.acmicpc.net/problem/1932
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/* 2018.08.28 */

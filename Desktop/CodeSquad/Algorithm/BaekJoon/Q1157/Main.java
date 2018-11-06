@@ -3,6 +3,11 @@ package Q1157;
 import java.util.Scanner;
 
 public class Main {
+	/*
+	 	문제 : 단어공부
+	 	url : https://www.acmicpc.net/problem/1157
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) {
 		/* 2018.08.08 */

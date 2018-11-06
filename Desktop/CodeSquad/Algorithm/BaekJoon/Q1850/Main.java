@@ -2,6 +2,11 @@ package Q1850;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 최대공약수
+	 	url : https://www.acmicpc.net/problem/1850
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) {
 		/*

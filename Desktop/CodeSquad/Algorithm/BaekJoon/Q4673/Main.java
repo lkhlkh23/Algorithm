@@ -3,6 +3,11 @@ package Q4673;
 import java.io.*;
 
 public class Main {
+	/*
+	 	문제 : 셀프넘버
+	 	url : https://www.acmicpc.net/problem/4673
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) throws IOException {
 		/* 2018.08.25 */

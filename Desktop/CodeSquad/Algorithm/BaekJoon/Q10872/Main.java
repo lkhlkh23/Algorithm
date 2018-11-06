@@ -3,6 +3,11 @@ package Q10872;
 import java.io.*;
 
 public class Main {
+	/*
+	 	문제 : 팩토리얼
+	 	url : https://www.acmicpc.net/problem/10872
+	 	재풀이 : X
+	*/
 	public static void main(String[] args) throws IOException {
 		/* 2018.08.23 */
 		/*

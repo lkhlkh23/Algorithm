@@ -3,6 +3,11 @@ package Q10989;
 import java.util.*;
 
 public class Main {
+    /*
+	 	문제 : 수 정렬하기 3
+	 	url : https://www.acmicpc.net/problem/10989
+	 	재풀이 : O
+	*/
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

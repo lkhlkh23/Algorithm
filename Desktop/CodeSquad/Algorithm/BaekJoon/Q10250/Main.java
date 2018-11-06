@@ -3,6 +3,11 @@ package Q10250;
 import java.util.Scanner;
 
 public class Main {
+	/*
+	 	문제 : ACM 호텔
+	 	url : https://www.acmicpc.net/problem/10250
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) {
 		/* 2018.08.05 */

@@ -3,6 +3,11 @@ package Q2455;
 import java.util.Scanner;
 
 public class Main {
+    /*
+	 	문제 : 지능형 기차
+	 	url : https://www.acmicpc.net/problem/2455
+	 	재풀이 : X
+	*/
 
     public static void main(String[] args) {
         /* Q2455 */

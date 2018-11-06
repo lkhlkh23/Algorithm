@@ -7,6 +7,11 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class Main {
+    /*
+	 	문제 : 단지번호붙이기
+	 	url : https://www.acmicpc.net/problem/2667
+	 	재풀이 : O
+	*/
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

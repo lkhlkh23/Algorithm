@@ -5,6 +5,11 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
+	/*
+	 	문제 : 크로아티아 알파벳
+	 	url : https://www.acmicpc.net/problem/2941
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) {
 		/* 2018.08.08 */

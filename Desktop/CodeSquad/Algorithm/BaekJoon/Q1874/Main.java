@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 스택수열
+	 	url : https://www.acmicpc.net/problem/1874
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/* 2018.08.14 */

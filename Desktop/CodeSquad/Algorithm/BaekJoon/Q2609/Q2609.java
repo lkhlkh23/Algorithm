@@ -7,6 +7,11 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class Q2609 {
+	/*
+	 	문제 : 최대공약수와 최소공배수
+	 	url : https://www.acmicpc.net/problem/2609
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) throws IOException {
 		/*

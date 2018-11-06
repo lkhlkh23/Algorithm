@@ -8,6 +8,11 @@ import java.io.OutputStreamWriter;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 덱
+	 	url : https://www.acmicpc.net/problem/10866
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/* 2018.08.18 */

@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+	/*
+	 	문제 : 괄호의 값
+	 	url : https://www.acmicpc.net/problem/2504
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) throws IOException {
 		/* 2018.08.14 */

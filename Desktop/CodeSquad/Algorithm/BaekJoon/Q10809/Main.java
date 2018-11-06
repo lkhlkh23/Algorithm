@@ -3,6 +3,11 @@ package Q10809;
 import java.util.Scanner;
 
 public class Main {
+	/*
+	 	문제 : 알파벳 찾기
+	 	url : https://www.acmicpc.net/problem/10809
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) {
 		/* 2018.08.08 */

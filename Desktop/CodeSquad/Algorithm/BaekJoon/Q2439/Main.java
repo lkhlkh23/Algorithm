@@ -3,6 +3,11 @@ package Q2439;
 import java.util.Scanner;
 
 public class Main {
+    /*
+	 	문제 : 별찍기 - 2
+	 	url : https://www.acmicpc.net/problem/2439
+	 	재풀이 : X
+	*/
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
         Scanner sc = new Scanner(System.in);

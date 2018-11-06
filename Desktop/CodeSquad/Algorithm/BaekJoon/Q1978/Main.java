@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 public class Main {
+	/*
+	 	문제 : 소수찾기
+	 	url : https://www.acmicpc.net/problem/1978
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) throws IOException {
 		/* 2018.08.10 */

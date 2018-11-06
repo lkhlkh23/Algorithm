@@ -3,6 +3,11 @@ package Q1463;
 import java.io.*;
 
 public class Main {
+	/*
+	 	문제 : 1로 만들기
+	 	url : https://www.acmicpc.net/problem/1463
+	 	재풀이 : O
+	*/
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		/* 2018.09.04 */

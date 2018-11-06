@@ -3,6 +3,11 @@ package Q2292;
 import java.util.Scanner;
 
 public class Main {
+	/*
+	 	문제 : 벌집
+	 	url : https://www.acmicpc.net/problem/2292
+	 	재풀이 : X
+	*/
 
 	public static void main(String[] args) {
 		/* 2018.08.03 */

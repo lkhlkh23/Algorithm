@@ -2,6 +2,11 @@ package Q2490;
 import java.io.*;
 
 public class Main {
+   /*
+	 	문제 : 윷놀이
+	 	url : https://www.acmicpc.net/problem/2490
+	 	재풀이 : X
+	*/
    static final int LOOP = 3;
    static final String SPLIT_STANDARD = " ";
    static final char[] GAME_RESULT = {'D', 'C', 'B', 'A', 'E'};
