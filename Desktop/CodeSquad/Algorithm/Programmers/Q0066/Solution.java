@@ -44,4 +44,8 @@ public class Solution {
 
         return answer;
     }
+
+    public Solution() {
+
+    }
 }

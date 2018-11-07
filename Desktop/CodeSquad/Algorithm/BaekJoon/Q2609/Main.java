@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Q2609 {
+public class Main {
 	/*
 	 	문제 : 최대공약수와 최소공배수
 	 	url : https://www.acmicpc.net/problem/2609
