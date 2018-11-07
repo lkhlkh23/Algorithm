@@ -6,8 +6,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class Main {
     /*
-	 	문제 : 다이얼
-	 	url : https://www.acmicpc.net/problem/5622
+	 	문제 : 바이러스
+	 	url : https://www.acmicpc.net/problem/2606
 	 	재풀이 : X
 	*/
 
