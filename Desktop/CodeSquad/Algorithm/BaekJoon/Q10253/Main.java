@@ -1,4 +1,4 @@
-package Q10253_Not;
+package Q10253;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -20,12 +20,10 @@ public class Main {
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
             int c = 2;
-            int v = 1;
             while(a * c - b != 0) {
-                if(a * c - b >= 0) {
+                if(a * c >= b && a * c - b < b * c) {
                     a = a * c - b;
                     b = b * c;
-                    v *= c;
                 }
                 c++;
             }
