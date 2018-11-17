@@ -22,7 +22,6 @@ public class Main {
                     .collect(Collectors.toList());
             set.add(input.toString());
         }
-
         bw.write(set.size() + "\n");
         bw.close();
     }
