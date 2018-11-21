@@ -1,12 +1,13 @@
 package Q9251;
 
 import java.io.*;
+import java.util.Random;
 
 public class Main {
    /*
-       문제 : 피보나치 비스무리한 수열
-       url : https://www.acmicpc.net/problem/14495
-       재풀이 : X
+       문제 : LCS
+       url : https://www.acmicpc.net/problem/9251
+       재풀이 : O
     */
 
     public static void main(String[] args) throws IOException {
@@ -15,29 +16,22 @@ public class Main {
 
         String first = br.readLine();
         String second = br.readLine();
-        int index = 0;
-        int max = 0;
-        while(index < first.length()) {
-            int firstIndex = index;
-            int secondIndex = 0;
-            int answer = 0;
-            while (secondIndex < second.length() && firstIndex < first.length()) {
-                String s = String.valueOf(first.charAt(firstIndex));
-                if (second.indexOf(s, secondIndex) > -1) {
-                    answer++;
-                    secondIndex = second.indexOf(s, secondIndex) + 1;
-                    System.out.println("Print : " + s);
-                } else {
-                    System.out.println("Not Print : " + s);
-                }
-                firstIndex++;
-            }
-            System.out.println("********");
-            index++;
-            max = Math.max(max, answer);
-        }
-        bw.write(max + "\n");
+        boolean[][] visited = new boolean[1000][1000];
+        int[][] values = new int[1000][1000];
+        bw.write(LCS(visited, values, first, second, first.length() - 1, second.length() - 1) + "\n");
         bw.close();
     }
-// 예외 DFA, FAD
+
+    public static int LCS(boolean[][] visited, int[][] values, String first, String second, int firstIndex, int secondIndex) {
+        if(firstIndex < 0 || secondIndex < 0) return 0;
+        if(visited[firstIndex][secondIndex]) return values[firstIndex][secondIndex];
+        visited[firstIndex][secondIndex] = true;
+        if(first.charAt(firstIndex) == second.charAt(secondIndex)) {
+            values[firstIndex][secondIndex] = 1 + LCS(visited, values, first, second, firstIndex - 1, secondIndex - 1);
+        } else {
+            values[firstIndex][secondIndex] = Math.max(LCS(visited, values, first, second, firstIndex - 1, secondIndex)
+                    , LCS(visited, values, first, second, firstIndex, secondIndex - 1));
+        }
+        return values[firstIndex][secondIndex];
+    }
 }
