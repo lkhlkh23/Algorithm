@@ -1,12 +1,9 @@
 package dataStructure.collections;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public interface ListCollections {
+public interface ListCollections<T> {
     int size();
-    boolean add(int data);
-    boolean put(int index, int data);
-    int get(int index);
-    int remove(int index);
+    boolean add(T data);
+    boolean put(int index, T data);
+    T get(int index);
+    T remove(int index);
 }

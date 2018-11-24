@@ -1,15 +1,11 @@
 package dataStructure.collections;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-public class ArrayListCollection implements ListCollections {
-    private int[] arr;
+public final class ArrayListCollection<T> implements ListCollections {
+    private Object[] arr;
     private int idx;
 
     public ArrayListCollection() {
-        arr = new int[10];
+        arr = new Object[10];
         idx = 0;
     }
 
@@ -19,40 +15,39 @@ public class ArrayListCollection implements ListCollections {
     }
 
     @Override
-    public boolean add(int data) {
+    public boolean add(Object data) {
         if(idx == arr.length - 1) {
-            int[] temp = new int[(int)(arr.length * 1.5)];
+            Object[] temp = new Object[(int)(arr.length * 1.5)];
             System.arraycopy(arr, 0, temp, 0, arr.length);
             arr = temp;
         }
-        arr[idx++] = data;
+        arr[idx++] = (T)data;
         return true;
     }
 
     @Override
-    public boolean put(int index, int data) {
-        arr[index] = data;
+    public boolean put(int index, Object data) {
+        arr[index] = (T)data;
         return true;
     }
 
     @Override
-    public int get(int index) {
+    public T get(int index) {
         if(arr.length < idx) {
             throw new IndexOutOfBoundsException();
         }
-        return arr[index];
+        return (T)arr[index];
     }
 
     @Override
-    public int remove(int index) {
-        if(arr.length < idx) {
+    public T remove(int index) {
+        if(idx < index) {
             throw new IndexOutOfBoundsException();
         }
-        int temp = arr[index];
+        T temp = (T)arr[index];
         for (int i = index; i < arr.length - 1; i++) {
             arr[i] = arr[i + 1];
         }
-        System.out.println(Arrays.toString(arr));
         idx--;
         return temp;
     }
@@ -60,8 +55,8 @@ public class ArrayListCollection implements ListCollections {
 
 
     public static void main(String[] args) {
-        ListCollections list = new ArrayListCollection();
-        for (int i = 0; i < 20; i++) {
+        ListCollections<Integer> list = new ArrayListCollection();
+        for (int i = 0; i < 11; i++) {
             list.add(i);
         }
         System.out.println();
