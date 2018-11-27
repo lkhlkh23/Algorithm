@@ -20,19 +20,18 @@ public class Main {
            this.y = y;
        }
 
-
-
-       @Override
-       public String toString() {
-           return "Pair{" +
-                   "x=" + x +
-                   ", y=" + y +
-                   '}';
-       }
-
        @Override
        public int compareTo(Pair o) {
-           return this.x - o.x;
+           if(this.y > o.y) {
+               return 1;
+           } else if(this.y == o.y && this.x > o.x) {
+               return 1;
+           } else if(this.y == o.y && this.x < o.x) {
+               return -1;
+           }  else if(this.y < o.y) {
+               return -1;
+           }
+           return 0;
        }
    }
 
@@ -41,7 +40,7 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder();
 
-        List<Pair> list = new ArrayList<Pair>();
+        List<Pair> list = new ArrayList<>();
         int n = Integer.parseInt(br.readLine());
         for (int i = 0; i < n; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -49,19 +48,9 @@ public class Main {
                     , Integer.parseInt(st.nextToken())));
         }
 
-        Collections.sort(list, new Comparator<Pair>() {
-            @Override
-            public int compare(Pair o1, Pair o2) {
-                return o1.y - o2.y;
-            }
-        });
+        Collections.sort(list);
 
-        Set<Pair> set = new TreeSet<>();
         for(Pair pair : list) {
-            set.add(pair);
-        }
-
-        for(Pair pair : set) {
             sb.append(pair.x).append(" ").append(pair.y).append("\n");
         }
 
