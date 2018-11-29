@@ -15,10 +15,6 @@ public class Node<T> {
 
     @Override
     public String toString() {
-        return "Node{" +
-                "data=" + data +
-                ", prev=" + prev.toString() +
-                ", next=" + next.toString() +
-                '}';
+        return "[" +this.data.toString() + "]";
     }
 }

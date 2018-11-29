@@ -9,8 +9,8 @@ public interface DoublyLinkedListCollection<T> {
     boolean put(int index, Node<T> data);
     boolean addFirst(Node<T> data);
     boolean addLast(Node<T> data);
-    T removeFirst();
-    T removeLast();
-    T get(int index);
-    T remove(int index);
+    Node<T> removeFirst();
+    Node<T> removeLast();
+    Node<T> get(int index);
+    Node<T> remove(int index);
 }
