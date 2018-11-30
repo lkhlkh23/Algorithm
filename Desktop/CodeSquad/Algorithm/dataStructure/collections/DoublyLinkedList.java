@@ -3,6 +3,7 @@ package dataStructure.collections;
 public class DoublyLinkedList<T> implements DoublyLinkedListCollection<T> {
     private Node<T> head = new Node<>();
     private Node<T> tail = new Node<>();
+    private int count = 0;
 
     public DoublyLinkedList() {
         head.next = tail;
@@ -12,26 +13,22 @@ public class DoublyLinkedList<T> implements DoublyLinkedListCollection<T> {
 
     @Override
     public int size() {
-        int count = 0;
-        Node<T> node = head;
-        while((node = node.next) != null && node.next != null) {
-            count++;
-        }
         return count;
     }
 
     @Override
-    public boolean add(T data) {
+    public void add(T data) {
         Node<T> node = new Node(data);
         node.prev = tail.prev;
         node.next = tail;
         tail.prev.next = node;
         tail.prev = node;
-        return true;
+
+        count++;
     }
 
     @Override
-    public boolean put(int index, T data) {
+    public void put(int index, T data) {
         if(size() <= index || index < 0) {
             throw new IndexOutOfBoundsException();
         }
@@ -41,27 +38,28 @@ public class DoublyLinkedList<T> implements DoublyLinkedListCollection<T> {
             node = node.next;
         }
         node.data = data;
-        return true;
     }
 
     @Override
-    public boolean addFirst(T data) {
+    public void addFirst(T data) {
         Node node = new Node(data);
         node.prev = head.next.prev;
         node.next = head.next;
         head.next.prev = node;
         head.next = node;
-        return true;
+
+        count++;
     }
 
     @Override
-    public boolean addLast(T data) {
+    public void addLast(T data) {
         Node<T> node = new Node(data);
         node.prev = tail.prev;
         node.next = tail;
         tail.prev.next = node;
         tail.prev = node;
-        return true;
+
+        count++;
     }
 
     @Override
@@ -76,6 +74,8 @@ public class DoublyLinkedList<T> implements DoublyLinkedListCollection<T> {
         head.next.prev = head.next.prev.prev;
         head.next.prev.prev = null;
         head.next.prev = head;
+
+        count--;
         return node.data;
     }
 
@@ -90,6 +90,8 @@ public class DoublyLinkedList<T> implements DoublyLinkedListCollection<T> {
         tail.prev.next.prev = null;
         tail.prev.next.next = null;
         tail.prev.next = tail;
+
+        count--;
         return node.data;
     }
 
@@ -128,6 +130,8 @@ public class DoublyLinkedList<T> implements DoublyLinkedListCollection<T> {
         prevNode.next.prev.next = null;
         nextNode.prev = null;
         nextNode.prev = prevNode;
+
+        count--;
 
         return node.data;
     }
