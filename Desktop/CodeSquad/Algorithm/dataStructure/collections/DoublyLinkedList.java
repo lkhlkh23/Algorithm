@@ -1,8 +1,6 @@
 package dataStructure.collections;
 
-import java.util.List;
-
-public class DoublyLinkedList<T> implements DoublyLinkedListCollection {
+public class DoublyLinkedList<T> implements DoublyLinkedListCollection<T> {
     private Node<T> head = new Node<>();
     private Node<T> tail = new Node<>();
 
@@ -23,79 +21,115 @@ public class DoublyLinkedList<T> implements DoublyLinkedListCollection {
     }
 
     @Override
-    public boolean add(Node data) {
-        data.prev = tail.prev;
-        data.next = tail;
-        tail.prev.next = data;
-        tail.prev = data;
+    public boolean add(T data) {
+        Node<T> node = new Node(data);
+        node.prev = tail.prev;
+        node.next = tail;
+        tail.prev.next = node;
+        tail.prev = node;
         return true;
     }
 
     @Override
-    public boolean put(int index, Node data) {
-        return false;
-    }
+    public boolean put(int index, T data) {
+        if(size() <= index || index < 0) {
+            throw new IndexOutOfBoundsException();
+        }
 
-    @Override
-    public boolean addFirst(Node data) {
-        data.prev = head.next.prev;
-        data.next = head.next;
-        head.next.prev = data;
-        head.next = data;
+        Node<T> node = head.next;
+        for(int i = 0; i < index; i++) {
+            node = node.next;
+        }
+        node.data = data;
         return true;
     }
 
     @Override
-    public boolean addLast(Node data) {
-        data.prev = tail.prev;
-        data.next = tail;
-        tail.prev.next = data;
-        tail.prev = data;
+    public boolean addFirst(T data) {
+        Node node = new Node(data);
+        node.prev = head.next.prev;
+        node.next = head.next;
+        head.next.prev = node;
+        head.next = node;
         return true;
     }
 
     @Override
-    public Node<T> removeFirst() {
+    public boolean addLast(T data) {
+        Node<T> node = new Node(data);
+        node.prev = tail.prev;
+        node.next = tail;
+        tail.prev.next = node;
+        tail.prev = node;
+        return true;
+    }
+
+    @Override
+    public T removeFirst() {
         if(head.next == tail.prev) {
             throw new NullPointerException();
         }
+
         Node<T> node = head.next;
         head.next = head.next.next;
         head.next.prev.next = null;
         head.next.prev = head.next.prev.prev;
         head.next.prev.prev = null;
         head.next.prev = head;
-        return node;
+        return node.data;
     }
 
     @Override
-    public Node<T> removeLast() {
+    public T removeLast() {
         if(head.next == tail.prev) {
             throw new NullPointerException();
         }
+
         Node<T> node = tail.prev;
         tail.prev = tail.prev.prev;
         tail.prev.next.prev = null;
         tail.prev.next.next = null;
         tail.prev.next = tail;
-        return node;
+        return node.data;
     }
 
     @Override
-    public Node<T> get(int index) {
-        if(size() <= index) {
+    public T get(int index) {
+        if(size() <= index || index < 0) {
             throw new IndexOutOfBoundsException();
         }
+
         Node<T> node = head.next;
         for(int i = 0; i < index; i++) {
             node = node.next;
         }
-        return node;
+        return node.data;
     }
 
     @Override
-    public Node<T> remove(int index) {
-        return null;
+    public T remove(int index) {
+        if(size() <= index || index < 0) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        Node<T> prevNode = head;
+        for(int i = 0; i < index; i++) {
+            prevNode = prevNode.next;
+        }
+
+        Node<T> nextNode = tail;
+        for(int i = 0; i < size() - index - 1; i++) {
+            nextNode = nextNode.prev;
+        }
+
+        Node<T> node = nextNode.prev;
+
+        prevNode.next = nextNode;
+        prevNode.next.prev.next = null;
+        nextNode.prev = null;
+        nextNode.prev = prevNode;
+
+        return node.data;
     }
 
     @Override
@@ -110,22 +144,32 @@ public class DoublyLinkedList<T> implements DoublyLinkedListCollection {
 
     public static void main(String[] args) {
         DoublyLinkedListCollection<String> list = new DoublyLinkedList<>();
-        list.add(new Node(1));
-        list.add(new Node(2));
+        list.add("1");
+        list.add("2");
         System.out.println(list.toString()); // [1] [2]
 
-        list.addFirst(new Node(3));
+        list.addFirst("3");
         System.out.println(list.toString()); // [3] [1] [2]
 
         System.out.println(list.size()); // 3
 
-        System.out.println(list.removeFirst().toString()); // [3]
+        System.out.println(list.removeFirst()); // 3
         System.out.println(list.toString()); // [1] [2]
 
-        System.out.println(list.removeLast().toString()); // [2]
+        System.out.println(list.removeLast()); // 2
         System.out.println(list.toString()); // [1]
 
-        list.add(new Node(4));
-        System.out.println(list.get(1).toString()); // [4]
+        list.add("4");
+        System.out.println(list.get(1)); // 4
+
+        list.add("5");
+        list.add("6");
+        list.add("7");
+        list.add("8");
+        list.add("9"); // [1] [4] [5] [6] [7] [8] [9]
+        System.out.println(list.toString());
+
+        System.out.println(list.remove(3)); // 6
+        System.out.println(list.remove(5)); // 9
     }
 }
