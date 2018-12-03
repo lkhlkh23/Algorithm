@@ -14,12 +14,8 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder();
-
-        while(true) {
-            String s = br.readLine();
-            if(s.equals("")) {
-                break;
-            }
+        String s = "";
+        while(!(s = br.readLine()).equals("")) {
             char[] input = s.toCharArray();
             int[] arr = new int[4];
 
@@ -34,11 +30,10 @@ public class Main {
                     arr[3]++;
                 }
             }
-
             sb.append(String.format("%d %d %d %d\n", arr[0], arr[1], arr[2], arr[3]));
         }
 
-        bw.write(sb.toString());
+        bw.write(sb.toString().trim());
         bw.close();
     }
 
