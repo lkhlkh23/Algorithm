@@ -14,8 +14,8 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder();
-        String s = "";
-        while(!(s = br.readLine()).equals("")) {
+        String s = null;
+        while((s = br.readLine()) != null) {
             char[] input = s.toCharArray();
             int[] arr = new int[4];
 
@@ -33,7 +33,7 @@ public class Main {
             sb.append(String.format("%d %d %d %d\n", arr[0], arr[1], arr[2], arr[3]));
         }
 
-        bw.write(sb.toString().trim());
+        bw.write(sb.toString());
         bw.close();
     }
 
