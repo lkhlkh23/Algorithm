@@ -3,7 +3,6 @@
 1. 입력
     - 줄단위 입력(Create)
     - "CREATE "STRING"
-
 2. 출력
     - 줄번호 출력(PRINT)
     - 입력 내용 출력
