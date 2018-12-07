@@ -43,9 +43,19 @@ public class CommandManager {
            command.getCursor().newLine();
            return list;
         });
-        commandMapper.put("PRINT", (list, command) ->{
+        commandMapper.put("PRINT", (list, command) -> {
             ResultView.printAll(list);
             return null;
+        });
+        commandMapper.put("UPDATE", (list, command) -> {
+            int indexY = command.getCursor().getY();
+            int indexX = command.getCursor().getX();
+            String line = list.get(indexY);
+            list.set(indexY,
+                    line.substring(0, indexX) + command.getOption()
+                            + line.substring(indexX + command.getOption().length()));
+            command.getCursor().setPosition(indexX + command.getOption().length(), indexY);
+            return list;
         });
     }
 
