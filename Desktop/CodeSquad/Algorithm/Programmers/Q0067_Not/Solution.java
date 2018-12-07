@@ -1,4 +1,4 @@
-package Q0067;
+package Q0067_Not;
 
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
