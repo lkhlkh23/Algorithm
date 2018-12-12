@@ -18,42 +18,42 @@
     <session id="1685817651">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="115" />
+          <entry key="project.closed" value="116" />
           <entry key="project.open.time.0" value="16" />
           <entry key="project.open.time.1" value="84" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.2" value="6" />
+          <entry key="project.open.time.2" value="7" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="116" />
+          <entry key="project.opened" value="117" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="2" />
-          <entry key="java" value="436" />
+          <entry key="java" value="437" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="436" />
+          <entry key="JAVA" value="437" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="33" />
-          <entry key="java" value="113636" />
+          <entry key="java" value="113637" />
           <entry key="md" value="466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="113636" />
+          <entry key="JAVA" value="113637" />
           <entry key="PLAIN_TEXT" value="499" />
         </counts>
       </usages-collector>
@@ -113,16 +113,28 @@
         <entry file="file://$PROJECT_DIR$/programmers/Q0067_Not/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="9" column="23" lean-forward="true" selection-end-line="46" />
+              <caret line="9" column="23" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baekjoon/Q4631/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/baekjoon/Q4631/Main.java">
+        <entry file="file://$PROJECT_DIR$/baekjoon/Q2331/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/baekjoon/Q9251/Main.java" />
         <option value="$PROJECT_DIR$/dataStructure/Collections/ListCollections.java" />
         <option value="$PROJECT_DIR$/dataStructure/collections/sort/InsertionSort.java" />
         <option value="$PROJECT_DIR$/dataStructure/collections/LinkedListCollection.java" />
@@ -232,6 +243,7 @@
         <option value="$PROJECT_DIR$/programmers/Q0069/Solution.java" />
         <option value="$PROJECT_DIR$/programmers/Q0070/Solution.java" />
         <option value="$PROJECT_DIR$/baekjoon/Q4631/Main.java" />
+        <option value="$PROJECT_DIR$/baekjoon/Q2331/Main.java" />
       </list>
     </option>
   </component>
@@ -246,7 +258,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,15 +275,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544508517313" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544580615570" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -416,7 +428,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.29685265" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.30114448" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="7" />
       <window_info id="Project Explorer" order="8" />
@@ -427,7 +439,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -512,13 +524,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/baekjoon/Q11651/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="34" selection-end-line="60" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baekjoon/Q10950/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -815,10 +820,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/baekjoon/Q15894/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="48" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/programmers/Q0068/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programmers/Q0067_Not/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="23" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programmers/Q0070/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -833,37 +865,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/programmers/Q0070/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/programmers/Q0067_Not/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="23" lean-forward="true" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baekjoon/Q15894/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="48" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baekjoon/Q4631/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baekjoon/Q2331/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
