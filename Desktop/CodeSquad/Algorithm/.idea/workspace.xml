@@ -18,42 +18,42 @@
     <session id="1685817651">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="118" />
+          <entry key="project.closed" value="119" />
           <entry key="project.open.time.0" value="16" />
           <entry key="project.open.time.1" value="84" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.2" value="8" />
+          <entry key="project.open.time.2" value="9" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="118" />
+          <entry key="project.opened" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="2" />
-          <entry key="java" value="438" />
+          <entry key="java" value="441" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="438" />
+          <entry key="JAVA" value="441" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="33" />
-          <entry key="java" value="114124" />
+          <entry key="java" value="115680" />
           <entry key="md" value="466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="114124" />
+          <entry key="JAVA" value="115680" />
           <entry key="PLAIN_TEXT" value="499" />
         </counts>
       </usages-collector>
@@ -61,24 +61,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baekjoon/Q9288/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="13" selection-end-line="28" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baekjoon/Q2495/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="16" selection-end-line="31" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baekjoon/Q15894/Main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -130,11 +112,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baekjoon/Q9426_Not/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataStructure/sort/Prcatice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -193,8 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dataStructure/collections/LinkedListCollection.java" />
-        <option value="$PROJECT_DIR$/dataStructure/collections/DoubleLinkedList.java" />
         <option value="$PROJECT_DIR$/baekjoon/Q2193/Main.java" />
         <option value="$PROJECT_DIR$/baekjoon/Q10953/Main.java" />
         <option value="$PROJECT_DIR$/baekjoon/Q2947/Main.java" />
@@ -244,6 +233,8 @@
         <option value="$PROJECT_DIR$/baekjoon/Q2331/Main.java" />
         <option value="$PROJECT_DIR$/baekjoon/Q9426/Main.java" />
         <option value="$PROJECT_DIR$/baekjoon/Q9426_Not/Main.java" />
+        <option value="$PROJECT_DIR$/dataStructure/sort/prcatice.java" />
+        <option value="$PROJECT_DIR$/dataStructure/sort/Prcatice.java" />
       </list>
     </option>
   </component>
@@ -258,7 +249,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,21 +260,27 @@
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="baekjoon" type="462c0819:PsiDirectoryNode" />
+              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="dataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544604312801" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544773518816" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -315,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
+  <component name="RunManager">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q15894.Main" />
       <module name="Algorithm" />
@@ -368,6 +365,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Prcatice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataStructure.sort.Prcatice" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dataStructure.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q0069.Solution" />
       <module name="Algorithm" />
@@ -386,11 +396,11 @@
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Solution (1)" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (4)" />
+      <item itemvalue="Application.Prcatice" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.Prcatice" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Main (1)" />
@@ -428,7 +438,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.30543634" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.30972818" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="7" />
       <window_info id="Project Explorer" order="8" />
@@ -524,14 +534,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dataStructure/collections/LinkedListCollection.java" />
-    <entry file="file://$PROJECT_DIR$/baekjoon/Q2592/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codeSquad/travel/BFS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -736,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataStructure/sort/InsertionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataStructure/texteditor/domain/CommandFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -844,6 +839,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/baekjoon/Q2331/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/programmers/Q0070/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -865,20 +870,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baekjoon/Q2331/Main.java">
+    <entry file="file://$PROJECT_DIR$/dataStructure/sort/InsertionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baekjoon/Q9426_Not/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69096">
+          <caret line="5100" column="36" selection-start-line="5100" selection-start-column="36" selection-end-line="5100" selection-end-column="36" />
+          <folding>
+            <element signature="e#197058#197059#0" expanded="true" />
+            <element signature="e#197128#197129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataStructure/sort/Prcatice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
         </state>
       </provider>
     </entry>
