@@ -17,20 +17,16 @@ public class Main {
 
         int[] arr = new int[1000 + 1];
         int index = 1;
-        for (int i = 1; index < arr.length; i++) {
-            for (int j = 0; j < i && index < arr.length; j++) {
+        for (int i = 1; index < arr.length; i++)
+            for (int j = 0; j < i && index < arr.length; j++)
                 arr[index++] = i;
-            }
-        }
 
         String[] input = br.readLine().split(" ");
         int sum = 0;
-        for (int i = Integer.parseInt(input[0]); i <= Integer.parseInt(input[1]); i++) {
+        for (int i = Integer.parseInt(input[0]); i <= Integer.parseInt(input[1]); i++)
             sum += arr[i];
-        }
-
+        
         bw.write(sum + System.lineSeparator());
-
         bw.close();
     }
 }
