@@ -1,4 +1,4 @@
-package Q1715;
+package Q1715_Not;
 
 import java.io.*;
 import java.util.Arrays;
