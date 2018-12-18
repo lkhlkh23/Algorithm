@@ -1,8 +1,6 @@
 package Q1292;
 
-
 import java.io.*;
-import java.util.Arrays;
 
 public class Main {
    /*
@@ -25,7 +23,7 @@ public class Main {
         int sum = 0;
         for (int i = Integer.parseInt(input[0]); i <= Integer.parseInt(input[1]); i++)
             sum += arr[i];
-        
+
         bw.write(sum + System.lineSeparator());
         bw.close();
     }
