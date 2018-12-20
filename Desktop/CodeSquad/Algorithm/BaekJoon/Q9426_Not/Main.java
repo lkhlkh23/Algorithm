@@ -1,12 +1,14 @@
 package Q9426_Not;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class Main {
-   /*
-       문제 : 중앙값 측정
-       url : https://www.acmicpc.net/problem/9426
-       재풀이 : O
+
+    /*
+     문제 : 중앙값 측정
+     url : https://www.acmicpc.net/problem/9426
+     재풀이 : X
     */
 
     public static void main(String[] args) throws IOException {
@@ -21,18 +23,24 @@ public class Main {
         for (int i = 0; i < n; i++)
             arr[i] = Integer.parseInt(br.readLine());
 
-        long sum = 0;
-        int mid = (k + 1) / 2;
+        int sum = 0;
         for(int i = 0; i <= n - k; i++) {
-            if(k % 2 == 0) {
-                sum += ((arr[mid + i - 1] + arr[mid + i]) / 2);
-            } else {
-                sum += arr[mid + i - 1];
-            }
-            System.out.println(sum);
+            sum += getResult(arr, i, k + i, k);
         }
 
         bw.write(sum + "\n");
         bw.close();
+    }
+
+    public static int getResult(int[] arr, int start, int end, int k) {
+        int[] temp = new int[k];
+        System.arraycopy(arr, start, temp, 0, k);
+        Arrays.sort(temp);
+        int mid = (k + 1) / 2;
+        if(k % 2 == 0) {
+            return ((temp[mid - 1] + temp[mid]) / 2);
+        } else {
+            return temp[mid - 1];
+        }
     }
 }
