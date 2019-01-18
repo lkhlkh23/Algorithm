@@ -1,4 +1,4 @@
-package Q11659;
+package Q11659_Not;
 
 import java.io.*;
 public class Main {
@@ -33,6 +33,6 @@ public class Main {
         }
 
         bw.write(sb.toString());
-        bw.close();  
+        bw.close();
     }
 }
