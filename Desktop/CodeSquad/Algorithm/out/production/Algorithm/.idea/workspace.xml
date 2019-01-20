@@ -18,9 +18,9 @@
     <session id="1685817651">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="153" />
+          <entry key="project.closed" value="154" />
           <entry key="project.open.time.0" value="16" />
-          <entry key="project.open.time.1" value="90" />
+          <entry key="project.open.time.1" value="91" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="32" />
           <entry key="project.open.time.3" value="4" />
@@ -28,33 +28,33 @@
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="154" />
+          <entry key="project.opened" value="155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="2" />
-          <entry key="java" value="482" />
+          <entry key="java" value="484" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="482" />
+          <entry key="JAVA" value="484" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="33" />
-          <entry key="java" value="127724" />
+          <entry key="java" value="128339" />
           <entry key="md" value="466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="127724" />
+          <entry key="JAVA" value="128339" />
           <entry key="PLAIN_TEXT" value="499" />
         </counts>
       </usages-collector>
@@ -83,15 +83,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baekjoon/Q6502/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+            <state relative-caret-position="375">
+              <caret line="25" column="9" selection-end-line="35" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeforce/gennadycardgame/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="16" selection-end-line="25" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codeforce/codeforce533/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1122#1123#0" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dataStructure/texteditor/TextEditor.java" />
         <option value="$PROJECT_DIR$/dataStructure/texteditor/REARDME.md" />
         <option value="$PROJECT_DIR$/baekjoon/Q9288/Main.java" />
         <option value="$PROJECT_DIR$/baekjoon/Q2495/Main.java" />
@@ -178,12 +193,13 @@
         <option value="$PROJECT_DIR$/baekjoon/Q11659_Not/Main.java" />
         <option value="$PROJECT_DIR$/baekjoon/Q9536/Main.java" />
         <option value="$PROJECT_DIR$/baekjoon/Q6502/Main.java" />
+        <option value="$PROJECT_DIR$/codeforce/codeforce533/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="39" />
-    <option name="y" value="84" />
+    <option name="y" value="39" />
     <option name="width" value="1312" />
     <option name="height" value="816" />
   </component>
@@ -192,7 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,12 +218,13 @@
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="baekjoon" type="462c0819:PsiDirectoryNode" />
+              <item name="codeforce" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="codeforce" type="462c0819:PsiDirectoryNode" />
+              <item name="gennadycardgame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -221,6 +237,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -228,7 +245,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547804371256" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547987736555" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -261,26 +278,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (5)">
+  <component name="RunManager" selected="Application.Main (6)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q5585.Main" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Q5585.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q2028.Main" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Q2028.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -327,12 +331,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q2231.Main" />
+    <configuration name="Main (6)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codeforce.codeforce533.Main" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Q2231.*" />
+          <option name="PATTERN" value="codeforce.codeforce533.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -341,20 +345,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (3)" />
       <item itemvalue="Application.Main (4)" />
       <item itemvalue="Application.Main (5)" />
+      <item itemvalue="Application.Main (6)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (6)" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -388,7 +391,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.34549356" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.3505007" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="7" />
       <window_info id="Project Explorer" order="8" />
@@ -484,13 +487,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/baekjoon/Q9288/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="13" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baekjoon/Q2495/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -766,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeforce/gennadycardgame/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baekjoon/Q10216/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -830,12 +819,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baekjoon/Q6502/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+        <state relative-caret-position="375">
+          <caret line="25" column="9" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforce/gennadycardgame/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeforce/codeforce533/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
           </folding>
         </state>
       </provider>
