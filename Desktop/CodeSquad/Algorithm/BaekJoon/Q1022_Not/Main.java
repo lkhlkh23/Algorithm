@@ -1,4 +1,4 @@
-package Q1022;
+package Q1022_Not;
 
 import java.io.*;
 import java.util.*;
