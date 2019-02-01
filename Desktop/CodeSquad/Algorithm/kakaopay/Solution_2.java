@@ -43,7 +43,6 @@ public class Solution_2 {
 
         System.out.println(list.toString());
 
-
         return answer;
     }
 
