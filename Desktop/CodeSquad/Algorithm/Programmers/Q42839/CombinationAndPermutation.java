@@ -1,4 +1,4 @@
-package Q0071;
+package Q42839;
 
 public class CombinationAndPermutation {
     public static void main(String[] ar){

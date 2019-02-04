@@ -1,6 +1,12 @@
 package Q0069;
 
 public class Solution {
+    /*
+	 	문제 : 소수찾
+	 	url : https://programmers.co.kr/learn/courses/30/lessons/42839
+	 	재풀이 : O
+	*/
+
     public int solution(int[] numbers, int target) {
         return DFS(numbers, target, 0, 0);
     }

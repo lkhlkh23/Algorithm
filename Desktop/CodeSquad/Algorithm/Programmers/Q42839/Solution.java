@@ -1,8 +1,14 @@
-package Q0071;
+package Q42839;
 
 import java.util.*;
 
 public class Solution {
+
+    /*
+	 	문제 : 소수찾기
+	 	url : https://programmers.co.kr/learn/courses/30/lessons/42839
+	 	재풀이 : O
+	*/
 
     public static void main(String[] args) {
         System.out.println(solution("17"));

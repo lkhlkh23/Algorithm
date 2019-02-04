@@ -14,8 +14,8 @@ public class Solution {
 
     public int solution(int n, int[][] computers) {
         int answer = 0;
-        Queue<Node> queue = new ConcurrentLinkedQueue<>();
-        List<Node> list = new ArrayList<>();
+        Queue<Node> queue = new ConcurrentLinkedQueue<Node>();
+        List<Node> list = new ArrayList<Node>();
         boolean[] visited = new boolean[computers.length];
 
         for (int i = 0; i < computers.length; i++)
@@ -50,7 +50,7 @@ public class Solution {
 
     public class Node {
         private int data;
-        private List<Node> adjacent = new ArrayList<>();
+        private List<Node> adjacent = new ArrayList<Node>();
 
         public Node(int data) {
             this.data = data;
