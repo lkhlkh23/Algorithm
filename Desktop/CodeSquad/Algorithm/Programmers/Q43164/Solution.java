@@ -30,7 +30,7 @@ class Solution {
     }
 
     public Node dfs(List<Node> tickets, Node departure, List<Node> result, boolean[] visited) {
-        if(index == arr.length - 1) {
+        /*if(index == arr.length - 1) {
             return departure;
         } else {
             for (Node ticket : tickets) {
@@ -40,7 +40,7 @@ class Solution {
                     return dfs(tickets, ticket, cnt);
                 }
             }
-        }
+        }*/
         return null;
     }
 
