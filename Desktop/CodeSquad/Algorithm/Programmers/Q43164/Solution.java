@@ -1,113 +1,76 @@
 package Q43164;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.stream.Collectors;
 
 class Solution {
     public String[] solution(String[][] tickets) {
-        /* 출발지 초기화 */
+        // 출발지 초기화 //
         List<Node> nodeList = new ArrayList<>();
-        for (int i = 0; i < tickets.length; i++) {
+        for (int i = 0; i < tickets.length; i++)
             nodeList.add(new Node(tickets[i][0], tickets[i][1]));
-        }
 
         Collections.sort(nodeList, ((o1, o2) -> o1.departure.compareTo((o2.departure)) != 0
                 ? o1.departure.compareTo((o2.departure)) : o1.destination.compareTo(o2.destination)));
 
-        String[] answer = new String[nodeList.size() + 1];
-        for (Node node : nodeList) {
-            boolean[] visited = new boolean[nodeList.size()];
-            List<Node> result = new ArrayList<>();
-            dfs(nodeList, node, result, visited);
-            if(result.size() == nodeList.size()) {
-                System.out.println(result.toString());
-                break;
-            }
+        // ICN으로 시작된 출발점 설정 //
+        List<Node> departures = new ArrayList<>();
+        for (Node node : nodeList)
+            if(node.departure.equals("ICN"))
+                departures.add(node);
+
+        // DFS //
+        for (Node node : departures) {
+            node.index = 0;
+            if(dfs(nodeList, node, 1)) break;
         }
+
+        return createArray(nodeList);
+    }
+
+    public String[] createArray(List<Node> nodeList) {
+        // index 순차적으로 값을 넣기 위해 //
+        Collections.sort(nodeList, (o1, o2) -> o1.index > o2.index ? 1 : -1);
+
+        String[] answer = new String[nodeList.size() + 1];
+        answer[0] = nodeList.get(0).departure;
+        answer[1] = nodeList.get(0).destination;
+        for (int i = 1; i < nodeList.size(); i++)
+            answer[i + 1] = nodeList.get(i).destination;
 
         return answer;
     }
 
-    public Node dfs(List<Node> tickets, Node departure, List<Node> result, boolean[] visited) {
-        /*if(index == arr.length - 1) {
-            return departure;
-        } else {
-            for (Node ticket : tickets) {
-                if(!ticket.isVisited() && departure.isAdjacent(ticket)) {
-                    ticket.visit();
-                    ticket.addNode(ticket, departure.list);
-                    return dfs(tickets, ticket, cnt);
-                }
+    public boolean dfs(List<Node> tickets, Node departure, int idx) {
+        boolean stop = false;
+        if(idx == tickets.size())
+            return true;
+
+        for (Node ticket : tickets) {
+            if(ticket.index < 0 && departure.isAdjacent(ticket)) {
+                ticket.index = idx;
+                if((stop = dfs(tickets, ticket, idx + 1))) break;
             }
-        }*/
-        return null;
+        }
+
+        // 잘못된 경로 일 경우, 현재 경로는 취소하기 위한 로직 //
+        if(!stop)
+            departure.index = -1;
+
+        return stop;
     }
 
     public class Node {
-        public String departure;
-        public String destination;
-        public boolean visited;
-        List<String> list = new ArrayList<>();
+        private String departure;
+        private String destination;
+        private int index = -1;
 
         public Node(String departure, String destination) {
             this.departure = departure;
             this.destination = destination;
         }
 
-
         public boolean isAdjacent(Node other) {
             return this.destination.equals(other.departure);
         }
-
-        public void addNode(Node node) {
-            this.list.add(node.departure);
-            this.list.add(node.destination);
-        }
-
-        public void visit() {
-            this.visited = true;
-        }
-
-        public boolean isVisited() {
-            return this.visited;
-        }
-
-        public int obtainListSize() {
-            return this.list.size();
-        }
-
-        @Override
-        public String toString() {
-            return "Node{" +
-                    "departure='" + departure + '\'' +
-                    ", destination='" + destination + '\'' +
-                    '}';
-        }
-
-    }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        String[][] tickes = {{"ICN", "JFK"}, {"HND", "IAD"}, {"JFK", "HND"}};
-        String[] answers = solution.solution(tickes);
-        for(String str : answers) {
-            System.out.print(str + " ");
-        }
-        System.out.println();
-
-        String[][] tickets2 = {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL","SFO"}};
-        answers = solution.solution(tickets2);
-        for(String str : answers) {
-            System.out.print(str + " ");
-        }
-        System.out.println();
-
-        String[][] tickets3 = {{"A", "D"}, {"A", "B"}, {"A", "E"}};
-        answers = solution.solution(tickets3);
-        for(String str : answers) {
-            System.out.print(str + " ");
-        }
-        System.out.println();
     }
 }
