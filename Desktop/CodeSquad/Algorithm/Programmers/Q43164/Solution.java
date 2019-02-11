@@ -3,6 +3,12 @@ package Q43164;
 import java.util.*;
 
 class Solution {
+    /*
+	 	문제 : 여행경로
+	 	url : https://programmers.co.kr/learn/courses/30/lessons/43164
+	 	재풀이 : O
+	*/
+
     public String[] solution(String[][] tickets) {
         // 출발지 초기화 //
         List<Node> nodeList = new ArrayList<>();
