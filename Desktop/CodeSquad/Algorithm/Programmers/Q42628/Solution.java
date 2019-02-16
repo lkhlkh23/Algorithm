@@ -1,6 +1,7 @@
 package Q42628;
 
 import java.util.*;
+import java.util.function.BiFunction;
 
 class Solution {
     /*
@@ -45,7 +46,13 @@ class Solution {
         for(int num : new Solution().solution(operations)) {
             System.out.println(num);
         }
+
+        Map<String, BiFunction<Integer, Integer, Boolean>> map = new HashMap<>();
+        map.put("condition1", (a, b) -> {
+            if(a > b) return true;
+            return false;
+        });
+
+        System.out.println(map.get("condition1").apply(100, 80));
     }
-
-
 }
