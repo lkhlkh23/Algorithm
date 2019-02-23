@@ -1,52 +1,30 @@
 package Q42896;
 
-import java.util.Collections;
-import java.util.PriorityQueue;
-import java.util.Queue;
-
 public class Solution {
     /*
-	 	문제 : 카드게임
-	 	url : https://programmers.co.kr/learn/courses/30/lessons/42896
-	 	재풀이 : X
-	*/
+       문제 : 카드게임
+       url : https://programmers.co.kr/learn/courses/30/lessons/42896
+       재풀이 : X
+   */
 
     // 시간초과 - 테스크 케이스 3, 4가 맞지 않는다! //
     public int solution(int[] left, int[] right) {
-        int answer = 0;
+        int[][] scores = new int[left.length + 1][right.length + 1];
 
-        Queue<Integer> leftQueue = new PriorityQueue<>(Collections.reverseOrder());
-        int leftIndex = 0;
-        int rightIndex = 0;
-        for (int num : left)
-            leftQueue.add(num);
-
-        while(leftIndex < left.length && rightIndex < right.length) {
-            if(left[leftIndex] > right[rightIndex]) {
-                // 1. 왼쪽크면 오른쪽 팝 //
-                answer += right[rightIndex++];
-            } else if(leftQueue.peek() > right[rightIndex] && left[leftIndex] <= right[rightIndex]) {
-                // 2. 왼쪽 가장 큰 값 > 오른쪽 값, 왼쪽값 <= 오른쪽값 왼쪽값 버리기 //
-                if(leftQueue.peek() == left[leftIndex])
-                    leftQueue.poll();
-
-                leftIndex++;
-            } else if((leftQueue.peek() <= right[rightIndex] && left[leftIndex] < right[rightIndex])
-                        || leftQueue.peek() == right[rightIndex] && left[leftIndex] <= right[rightIndex]) {
-                // 3. 왼쪽 가장 큰 값 <= 오른쪽 값, 왼쪽 오른쪽 버리기 //
-                if(leftQueue.peek() == left[leftIndex])
-                    leftQueue.poll();
-
-                leftIndex++;
-                rightIndex++;
+        for(int i = 1; i < scores.length; i++) {
+            for(int j = 1; j < scores[0].length; j++) {
+                scores[i][j] = Math.max(scores[i - 1][j], scores[i - 1][j - 1]);
+                if(left[i - 1] > right[j - 1]) {
+                    scores[i][j] = Math.max(scores[i][j], scores[i][j - 1] + right[j - 1]);
+                }
             }
         }
 
-        return answer;
+        return scores[scores.length - 1][scores[0].length - 1];
     }
 
     public static void main(String[] args) {
-        //[3, 2, 5]	[2, 4, 1]	7
+        //[3, 2, 5]   [2, 4, 1]   7
         int[] left = {3, 2, 5};
         int[] right = {2, 4, 1};
         System.out.println(new Solution().solution(left, right));
