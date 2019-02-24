@@ -1,9 +1,6 @@
 package Q1699;
 
-
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
    /*
@@ -17,20 +14,16 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int n = Integer.parseInt(br.readLine());
-        int cnt = 0;
+        int[] arr = new int[n + 1];
 
-        int start = (int) Math.sqrt(n);
-        while(n > 0 && start > 0) {
-            if(n >= Math.pow(start, 2)) {
-                n -= Math.pow(start, 2);
-                cnt++;
-            } else {
-                start--;
-            }
-        }
+        for (int i = 0; i < arr.length; i++)
+            arr[i] = i;
 
-        bw.write((cnt) + "\n");
+        for (int i = 1; i < arr.length; i++)
+            for (int j = 1; j * j <= i ; j++)
+                arr[i] = Math.min(arr[i], arr[i - j * j] + 1);
+
+        bw.write((arr[n]) + "\n");
         bw.close();
     }
-
 }
