@@ -20,6 +20,8 @@ public class Solution {
             traffic.add(new Solution().new Traffic(index++, getStartTime(time, line.split(" ")[2]), time));
         }
 
+        System.out.println(traffic.toString());
+
         int max = 0;
         for (int i = 0; i < traffic.size(); i++) {
             answer = 0;
@@ -29,7 +31,6 @@ public class Solution {
                 }
             }
             max = Math.max(max, answer);
-            System.out.println(max);
         }
 
         return max;
