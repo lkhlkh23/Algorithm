@@ -47,9 +47,10 @@ public class Solution {
             Iterator<String> it = Arrays.asList(skill_trees).iterator();
             while(it.hasNext()) {
                 String skill = it.next();
+                System.out.println(skill + "~~");
                 if(!except.equals(skill) && isMatch(skill, regex)) {
-                    it.remove();
-                    System.out.println(skill);
+                    //it.remove();
+                    //System.out.println(skill);
                 }
             }
         } else {
