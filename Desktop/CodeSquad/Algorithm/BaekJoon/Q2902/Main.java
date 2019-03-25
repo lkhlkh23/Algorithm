@@ -4,6 +4,11 @@ import java.io.*;
 import java.util.stream.Stream;
 
 public class Main {
+    /*
+        문제    : KMP는 왜 KMP일까?
+        url  : https://www.acmicpc.net/problem/2902
+        재풀이 : X
+      */
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class Solution {
       /*
-      문제    : 예산
-      url  : https://programmers.co.kr/learn/courses/30/lessons/12982?language=java
-      재풀이 : X
-   */
+        문제    : KMP는 왜 KMP일까?
+        url  : https://www.acmicpc.net/problem/2902
+        재풀이 : X
+      */
 
     public static int solution(int[] d, int budget) {
         Arrays.sort(d);
