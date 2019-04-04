@@ -1,9 +1,6 @@
 package Q1159;
 
 import java.io.*;
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main {
    /*
@@ -17,15 +14,16 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int n = Integer.parseInt(br.readLine());
-        Map<Character, Integer> names = new TreeMap<>();
-        for (int i = 0; i < n; i++) {
-            char firstName = br.readLine().charAt(0);
-            names.put(firstName, names.containsKey(firstName) ? names.get(firstName) + 1 : 1);
-        }
+        int[] counts = new int[('z' - 'a') + 1];
+        for (int i = 0; i < n; i++)
+            counts[br.readLine().charAt(0) - 'a']++;
 
-        if(names.keySet().stream().filter(name -> names.get(name) >= 5).count() == 0) bw.write("PREDAJA");
-        else names.keySet().stream().filter(name -> names.get(name) >= 5).forEach(name -> System.out.print(name));
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < counts.length; i++)
+            if (counts[i] >= 5)
+                sb.append((char) ('a' + i));
 
+        bw.write(sb.toString().length() > 0 ? sb.toString() : "PREDAJA");
         bw.close();
     }
 }
