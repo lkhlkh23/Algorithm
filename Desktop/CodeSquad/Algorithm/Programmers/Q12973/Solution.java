@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Solution {
     /*
-	 	문제 : 짝지어 제거하
+	 	문제 : 짝지어 제거하기
 	 	url : https://programmers.co.kr/learn/courses/30/lessons/12973
 	 	재풀이 : X
 	*/
